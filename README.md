@@ -2,7 +2,7 @@
 Login page using Handlebars
 
 IMAGES
-##########
+###LOGIN PAGE#######
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/dbacf62c-0dd2-41c2-a122-243b04483520)
 #########
 
