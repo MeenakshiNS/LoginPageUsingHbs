@@ -4,10 +4,10 @@ Login page using Handlebars
 IMAGES
 ###LOGIN PAGE#######
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/dbacf62c-0dd2-41c2-a122-243b04483520)
-#########
+####SIGNUP PAGE#####
 
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/83913d71-cd3e-481c-be31-8a8e3c3957cf)
-########
+####DASHBOARD####
 
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/2e944f36-6b0e-4b38-b588-8bae9f4fc998)
 ########
