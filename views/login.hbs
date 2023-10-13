@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+     <div class="container mt-5  ">
+    <form action="/login" method="post" id="form" class="form m-auto bg-light rounded-4 mt-5 p-4 w-50" name="submit-form"  > 
+        <h1 class="text-center mt-1" >Login</h1>
+         <div class="text-center">
+          <p class="text-danger text-centre">{{message}}</p>
+         </div>
+         <div id="login-success-message" class="hidden">{{msg}}</div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" oninput="validateEmail()">
+         <div class="error text-danger"></div>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" oninput="validatePassword()">
+        <div class="error text-danger"></div>
+      </div>
+    <div class="text-center ">
+        <button type="submit" class="btn  w-25" id="submit">Login</button>
+    </div>
+    </form>
+   <div class="m-auto text-center m-4" id="to-signup">
+     <p>Don't have an account?  <a href="/signup" style="text-decoration: none;">Sign Up</a></p>
+   </div>
+  </div>
+
+<script>
+    //submission
+   const form = document.querySelector('#form')
+   const username = document.querySelector('#username');
+   const password = document.querySelector('#password');
+   {{!-- const successMessage = document.getElementById("login-success-message");
+  successMessage.classList.remove("hidden");
+   setTimeout(function() {
+    successMessage.classList.add("hidden");
+  }, 3000); --}}
+   
+   form.addEventListener('submit',(e)=>{
+    
+    if(!validateInputs()){
+        e.preventDefault();
+    }
+})
+   
+   function validateInputs(){
+    const usernameVal = username.value.trim()
+    const passwordVal = password.value.trim();
+    let success = true
+
+    if(usernameVal===''){
+        success=false;
+        setError(username,'Username is required')
+    }
+    else{
+        setSuccess(username)
+    }
+
+
+    if(passwordVal === ''){
+        success= false;
+        setError(password,'Password is required')
+    }
+    else if(passwordVal.length<5){
+        success = false;
+        setError(password,'Password must be atleast 5 characters long')
+    }
+    else{
+        setSuccess(password)
+    }
+
+    return success;
+
+}
+   
+   function setError(element,message){
+    const inputGroup = element.parentElement;
+    const errorElement = inputGroup.querySelector('.error')
+
+    errorElement.innerText = message;
+    inputGroup.classList.add('error')
+    inputGroup.classList.remove('success')
+}
+
+function setSuccess(element){
+    const inputGroup = element.parentElement;
+    const errorElement = inputGroup.querySelector('.error')
+
+    errorElement.innerText = '';
+    inputGroup.classList.add('success')
+    inputGroup.classList.remove('error')
+}
+</script>
+</body>
+</html>

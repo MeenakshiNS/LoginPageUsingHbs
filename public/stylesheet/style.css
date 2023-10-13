@@ -1,0 +1,108 @@
+/* body{
+    background: rgb(33, 61, 62);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+} */
+
+
+/*this login form section */
+body {
+    /* background-image: url("/public/img.jpg"); */
+    background-image: url("/img.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-image: url("/img.avif");
+    width: 20%;
+    max-width: none;
+    margin: 0 auto;
+}
+
+
+
+#submit{
+    background-color: rgb(114, 176, 0) ;
+    color: white;
+  }
+
+#to-signup p a{
+ text-decoration: none;
+ color: #792099;
+}
+.hidden {
+    color: rgb(3, 211, 3);
+    text-align: center;
+  }
+
+/* this signup form section */
+
+#form{
+    width:400px;
+    margin:0vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:#792099;
+}
+
+#form button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+#role{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) 
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+.err-msg{
+    color: red;
+    text-align: center;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}

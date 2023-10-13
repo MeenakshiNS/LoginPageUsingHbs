@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-userdetials</title>
+</head>
+<body>
+     <div class="container1">
+        <form action="/adminedit" method="post" id="form">
+                <h2>Admin-edit user</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="hidden"  id="id" name="id" value="{{data._id}}">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input  id="username" name="username" value="{{data.username}}">
+                <!-- Place this where you want the alert to appear -->
+{{#if message}}
+    <div class="alert alert-danger" role="alert">
+      {{message}}
+    </div>
+  {{/if}}
+
+<!-- Rest of your template code -->
+<!-- ... -->
+
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input  id="email" name="email" value="{{data.email}}">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Role</label>
+                <input  id="password" name="role" value="{{data.role}}">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="hidden" id="password" name="password" value="{{data.password}}">
+                <div class="error"></div>
+            </div>
+            <button type="submit">submit</button>
+            
+            <a href="/admin"><button class="btn btn-outline-primary bg-light text-info" type="button" value="logout">Cancel</button></a>
+
+        </form>
+
+    </div>
+</body>
+</html>
