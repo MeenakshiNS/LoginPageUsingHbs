@@ -10,10 +10,10 @@ IMAGES
 ####DASHBOARD####
 
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/2e944f36-6b0e-4b38-b588-8bae9f4fc998)
-########
+####ADMIN SIDE -USERS LIST####
 
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/27ed3d4d-da7a-47cd-892c-1c2d16c3fa07)
-#######
+###ADMIN SIDE - ADD USERS####
 
 ![image](https://github.com/MeenakshiNS/LoginPageUsingHbs/assets/130451378/cf28efe5-3c4a-4b5d-b6e4-6a3f1731ad00)
 
